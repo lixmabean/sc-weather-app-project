@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <form id="city-form">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Enter a city.."
+            required
+            class="search"
+          />
+          <input type="submit" value="Search" class="submit" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1>San Francisco</h1>
+            <p>
+              <span id="now-date">Saturday 23:02</span>, few clouds <br />
+              Humidity: <strong>74%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="main-temp">
+            <span class="main-temp-sun">🌥️</span>
+            <h1 class="main-temp">18</h1>
+            <span class="main-temp-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">uli c.</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+body {
+  background-color: #f1f9fe;
+  font-size: 15px;
+}
+header {
+  padding-bottom: 10px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 60px auto;
+  max-width: 600px;
+  box-shadow: 1px 7px 6px #c9dee9;
+  font-family: "Work Sans", sans-serif;
+}
+input {
+  padding: 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  font-size: 15px;
+}
+input.search {
+  width: 80%;
+  color: rgb(54, 54, 54);
+  background: #f1f9fe;
+}
+input.submit {
+  color: white;
+  background: #9cd5f8;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 25px 0;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h1.main-temp {
+  display: inline;
+  font-size: 80px;
+}
+p {
+  color: #9d9c9c;
+}
+p strong {
+  color: #f8bd0c;
+}
+div.main-temp {
+  position: relative;
+  top: 30px;
+}
+.main-temp-sun {
+  position: relative;
+  top: -10%;
+  font-size: 40px;
+}
+.main-temp-unit {
+  position: relative;
+  top: -25%;
+  font-size: 25px;
+  font-weight: 500;
+}
+footer {
+  padding-top: 10px;
+}
+footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+a {
+  color: #9cd5f8;
+}
