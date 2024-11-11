@@ -42,7 +42,10 @@ h1 {
 }
 h1.main-temp {
   display: inline;
-  font-size: 80px;
+  position: relative;
+  top: 5px;
+  right: 20px;
+  font-size: 100px;
 }
 p {
   color: #9d9c9c;
@@ -52,18 +55,19 @@ p strong {
 }
 div.main-temp {
   position: relative;
-  top: 30px;
+  top: 10px;
 }
-.main-temp-sun {
+.main-temp-icon {
   position: relative;
-  top: -10%;
-  font-size: 40px;
+  top: 20px;
+  right: 20px;
 }
 .main-temp-unit {
   position: relative;
-  top: -25%;
-  font-size: 25px;
+  top: -30%;
+  right: 20px;
   font-weight: 500;
+  font-size: 25px;
 }
 footer {
   padding-top: 10px;

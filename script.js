@@ -7,7 +7,9 @@ function displayTemp(response) {
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
+  iconElement.innerHTML = `<img src ="${response.data.condition.icon_url}" class="main-temp-icon" />`;
   mainCity.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
@@ -30,6 +32,13 @@ function formatDate(date) {
     "Sunday",
   ];
   let day = days[date.getDay()];
+
+  if (min < 10) {
+    min = `0${min}`;
+  }
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
 
   return `${day} ${hour}:${min}`;
 }
