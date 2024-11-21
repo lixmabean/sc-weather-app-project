@@ -60,4 +60,4 @@ function changeCity(event) {
 let searchForm = document.querySelector("#city-form");
 searchForm.addEventListener("submit", changeCity);
 
-searchCity("Uli");
+searchCity("London");
